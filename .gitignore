@@ -1,0 +1,7 @@
+authentication-api/target/
+
+target/
+.idea/
+#sharycar-feedback.iml
+#feedback-api/feedback-api.iml
+#feedback-persistence/feedback-persistence.iml
