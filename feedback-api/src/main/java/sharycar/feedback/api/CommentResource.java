@@ -12,7 +12,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
-@Path("/users")
+@Path("/comments")
 @RequestScoped
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
@@ -34,11 +34,14 @@ public class CommentResource {
 
 
 
-    @GET
-    @Path("/info")
-    public Response getProjectInfo() {
-        ProjectInfoClass pic = new ProjectInfoClass();
-        return Response.ok(pic).build();
+    @GET //@TODO query comments by car id
+    @Path("/{carId}")
+    public Response getProjectInfo(@PathParam("carId") Integer carId) {
+        TypedQuery<Comment> query = em.createNamedQuery("Comment.findAll", Comment.class);
+
+        List<Comment> comments= query.getResultList();
+
+        return Response.ok(comments).build();
     }
 
 
