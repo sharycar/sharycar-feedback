@@ -4,7 +4,7 @@
     <persistence-unit name="comments" transaction-type="RESOURCE_LOCAL">
         <non-jta-data-source>jdbc/SharyCarDB</non-jta-data-source>
 
-        <class>sharycar.feedback.api.Comment</class>
+        <class>sharycar.feedback.persistence.Comment</class>
 
         <properties>
             <property name="javax.persistence.schema-generation.database.action" value="create"/>

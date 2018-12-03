@@ -8,6 +8,7 @@
     <version>1.0.0</version>
     <modules>
         <module>feedback-api</module>
+        <module>sharycar-feedback-persistence</module>
     </modules>
     <packaging>pom</packaging>
 

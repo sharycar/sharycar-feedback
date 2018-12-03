@@ -1,6 +1,7 @@
 package sharycar.feedback.api;
 
-import sharycar.feedback.api.Comment;
+
+import sharycar.feedback.persistence.Comment;
 
 
 import javax.enterprise.context.RequestScoped;

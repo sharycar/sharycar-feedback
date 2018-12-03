@@ -1,4 +1,4 @@
-package sharycar.feedback.api;
+package sharycar.feedback.persistence;
 
 import javax.persistence.*;
 @Entity
