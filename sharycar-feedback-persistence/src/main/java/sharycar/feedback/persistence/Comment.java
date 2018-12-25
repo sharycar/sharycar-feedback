@@ -1,9 +1,7 @@
 package sharycar.feedback.persistence;
 
-import jdk.internal.jline.internal.Nullable;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Entity
@@ -19,7 +17,7 @@ public class Comment {
 
     private String comment;
 
-    @NotNull
+    @Column(nullable = false)
     private Integer car_id;
 
     public Integer getId() {
