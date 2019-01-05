@@ -1,6 +1,7 @@
 package sharycar.feedback.api;
 
 
+import com.kumuluz.ee.logs.cdi.Log;
 import sharycar.feedback.persistence.Comment;
 
 
@@ -18,6 +19,7 @@ import javax.persistence.Query;
 @RequestScoped
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
+@Log
 public class CommentResource {
 
     @PersistenceContext
